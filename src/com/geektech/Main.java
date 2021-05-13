@@ -1,31 +1,19 @@
 package com.geektech;
 
-import java.util.Arrays;
-
 public class Main {
-
-    public Main() {
-    }
-
+    String colt;
+    int damage;
+    int healthy;
     public static void main(String[] args) {
-	// write your code here
-        String nickname;
-        String realname;
-        int age;
-        int weight;
-
-      Hero createHeroes  = new  Hero (nickname ="super man", realname = "clark kent", age = 25);
-
-        System.out.println("Hero" + " " + createHeroes.nickname + " " + createHeroes.realname + " " + createHeroes.age);
-
-        createHeroes = new Hero(nickname = "bat man", realname = "bruce wayne", age = 30);
-
-        System.out.println("Hero" + " " + createHeroes.nickname + " " + createHeroes.realname + " " + createHeroes.age);
-
-        createHeroes = new Hero(nickname = "aqua man", realname = "arthur curry", age = 25, weight = 95);
-
-        System.out.println("Hero" + " " + createHeroes.nickname + " " + createHeroes.realname + " " + createHeroes.age + " " + createHeroes.weight);
+        Boss goro = new Boss(324,45,"P12");
+        goro.setHealthy(342);
+        goro.setColt("P12");
+        goro.setDamage(100);
 
 
-        }
+        System.out.println("БОСС ПОЛУЧИЛИ ЗДОРОВЬЕ " + " " +goro.getHealthy() + " " + "БОСС ПОЛУЧИЛ УРОН 45 " + goro.getDamage()+ "БОСС ПОЛУЧИЛ ОРУЖИЕ КОЛТ P12");
+
     }
+
+
+}
